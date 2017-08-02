@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gbk"?>
+<TaskList type="TaskList" name="TaskList">
+	<CDeuTask id="09F857C2-6BFE-4FCA-8786-D0100D79697E" type="" name="">
+		<IN_PATH type="" name="">E:\Code\数据及arcgis安装包\16 BMP</IN_PATH>
+		<OUT_PATH type="" name="">E:\Code\deu2000Trans</OUT_PATH>
+		<IN_DRIVER type="" name="">BMP</IN_DRIVER>
+		<OUT_DRIVER type="" name="">BMP</OUT_DRIVER>
+		<IN_ELLIPSE type="" name="">Beijing 1954</IN_ELLIPSE>
+		<OUT_ELLIPSE type="" name="">Beijing 1954 3 Degree GK CM 117E</OUT_ELLIPSE>
+		<IN_COORDTYPE type="" name="">Beijing 1954</IN_COORDTYPE>
+		<OUT_COORDTYPE type="" name="">Beijing 1954 3 Degree GK CM 117E</OUT_COORDTYPE>
+		<InCentr_long type="" name=""></InCentr_long>
+		<OutCentr_long type="" name=""></OutCentr_long>
+		<Type type="" name="">1</Type>
+		<Status type="" name="">1</Status>
+		<CurTable type="" name=""></CurTable>
+		<TableList type="" name="">
+			<tab type="" name="">E:\Code\数据及arcgis安装包\16 BMP\J49G093070.bmp</tab>
+		</TableList>
+		<ControlPath type="" name=""></ControlPath>
+		<TransModel type="" name=""></TransModel>
+	</CDeuTask>
+	<CDeuTask id="23C7BD97-6257-4ACA-90B3-32159F675C33" type="" name="">
+		<IN_PATH type="" name="">C:\Users\Rkc\Desktop\point</IN_PATH>
+		<OUT_PATH type="" name="">C:\Users\Rkc\Desktop\结果</OUT_PATH>
+		<IN_DRIVER type="" name="">ESRI Shapefile</IN_DRIVER>
+		<OUT_DRIVER type="" name="">ESRI Shapefile</OUT_DRIVER>
+		<IN_ELLIPSE type="" name="">Xian 1980 3 Degree GK CM 117E</IN_ELLIPSE>
+		<OUT_ELLIPSE type="" name="">CGCS_2000_3_Degree_GK_CM_117E</OUT_ELLIPSE>
+		<IN_COORDTYPE type="" name="">Xian 1980 3 Degree GK CM 117E</IN_COORDTYPE>
+		<OUT_COORDTYPE type="" name="">CGCS_2000_3_Degree_GK_CM_117E</OUT_COORDTYPE>
+		<InCentr_long type="" name=""></InCentr_long>
+		<OutCentr_long type="" name=""></OutCentr_long>
+		<Type type="" name="">0</Type>
+		<Status type="" name="">1</Status>
+		<CurTable type="" name=""></CurTable>
+		<TableList type="" name="">
+			<tab type="" name="">C:\Users\Rkc\Desktop\point\point.shp</tab>
+		</TableList>
+		<ControlPath type="" name="">C:\Users\Rkc\Desktop\任务_读取转换ShpFile\源数据\80-2000（117平面）.cp</ControlPath>
+		<TransModel type="" name="">格网转换模型</TransModel>
+	</CDeuTask>
+</TaskList>

@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{99A18E7F-3D66-4347-9837-BF2AC0927DF2}</ProjectGuid>
+    <RootNamespace>Deu2000</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.30501.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\bin/$(Configuration)\</OutDir>
+    <IntDir>.\..\..\temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\bin/$(Configuration)\</OutDir>
+    <IntDir>.\..\..\temp\$(Configuration)\$(ProjectName)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>../../dll/ArcEngine10/com/;../../include/DevelperKit10/include/CPPAPI;../../include/;../../include/skin;../../include/ogr;../../include/DeuProcessor;../../include/tinyxml;../../include/xml;../../dll/;../../include/oci;../../include/DeuKey;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\..\..\temp\$(Configuration)\$(ProjectName)/$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\temp\$(Configuration)\$(ProjectName)/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\temp\$(Configuration)\$(ProjectName)/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\temp\$(Configuration)\$(ProjectName)/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>../../bin/Debug/gdal_i.lib;../../lib/DeuSkinV9D.lib;../../lib/sqlite3.lib;../../lib/oci/msvc/oci.lib;../../lib/oci/msvc/ociw32.lib;../../lib/oci/msvc/oraocci9.lib;../../lib/oci/msvc/oramts.lib;../../lib/oci/msvc/kpucb.lib;..\..\bin\debug\GridMask.lib;../../bin/Debug/DeuTranslate.lib;../../lib/DEUCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm150 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>../../include/DevelperKit10/include/CPPAPI;../../dll/ArcEngine10/com/;../../include/;../../include/skin;../../include/ogr;../../include/DeuProcessor;../../include/tinyxml;../../include/xml;../../dll/;../../include/oci;../../include/DeuKey;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>8Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\..\..\temp\$(Configuration)\$(ProjectName)/$(ProjectName).pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\..\..\temp\$(Configuration)\$(ProjectName)/</AssemblerListingLocation>
+      <ObjectFileName>.\..\..\temp\$(Configuration)\$(ProjectName)/</ObjectFileName>
+      <ProgramDataBaseFileName>.\..\..\temp\$(Configuration)\$(ProjectName)/</ProgramDataBaseFileName>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat />
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>../../bin/Release/gdal_i.lib;../../lib/DeuSkinV9.lib;../../lib/sqlite3.lib;../../lib/oci/msvc/oci.lib;../../lib/oci/msvc/ociw32.lib;../../lib/oci/msvc/oraocci9.lib;../../lib/oci/msvc/oramts.lib;../../lib/oci/msvc/kpucb.lib;..\..\bin\release\GridMask.lib;../../bin/Release/DeuTranslate.lib;../../lib/DEUCore.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AnimateStatic.cpp" />
+    <ClCompile Include="ArcGDBTest.cpp" />
+    <ClCompile Include="ArcGISAuthorization.cpp" />
+    <ClCompile Include="ArcSDEConnection.cpp" />
+    <ClCompile Include="ArcSDERaster.cpp" />
+    <ClCompile Include="ArcSDEVector.cpp" />
+    <ClCompile Include="DeuComboBox.cpp" />
+    <ClCompile Include="DeuCoordinateSystem.cpp" />
+    <ClCompile Include="DeuDlgBackground.cpp" />
+    <ClCompile Include="DeuDlgCommCP.cpp" />
+    <ClCompile Include="DeuDlgCp.cpp" />
+    <ClCompile Include="DeuDlgCpList.cpp" />
+    <ClCompile Include="DeuDlgDataSrc.cpp" />
+    <ClCompile Include="DeuDlgDataSrcCustom.cpp" />
+    <ClCompile Include="DeuDlgDataSrcCustomDetail.cpp" />
+    <ClCompile Include="DeuDlgDataSrcDetail.cpp" />
+    <ClCompile Include="DeuDlgEllipManager.cpp" />
+    <ClCompile Include="DeuDlgExcel.cpp" />
+    <ClCompile Include="DeuDlgFiles.cpp" />
+    <ClCompile Include="DeuDlgGeoDetic.cpp" />
+    <ClCompile Include="DeuDlgGridSetting.cpp" />
+    <ClCompile Include="DeuDlgLogin.cpp" />
+    <ClCompile Include="DeuDlgOracle.cpp" />
+    <ClCompile Include="DeuDlgOraTables.cpp" />
+    <ClCompile Include="DeuDlgProjected.cpp" />
+    <ClCompile Include="DeuDlgUserGroups.cpp" />
+    <ClCompile Include="DeuDlgUserGroupsOpera.cpp" />
+    <ClCompile Include="DeuDlgUsers.cpp" />
+    <ClCompile Include="DeuDlgUsersOpera.cpp" />
+    <ClCompile Include="DeuDMap.cpp" />
+    <ClCompile Include="DeuEllipList.cpp" />
+    <ClCompile Include="DeuFLGrid.cpp" />
+    <ClCompile Include="DeuFunction.cpp" />
+    <ClCompile Include="DeuGlobal.cpp" />
+    <ClCompile Include="DeuGlobalChildFrame.cpp" />
+    <ClCompile Include="DeuGlobalMainFrm.cpp" />
+    <ClCompile Include="DeuGlobalParam.cpp" />
+    <ClCompile Include="DeuPanelTask.cpp" />
+    <ClCompile Include="DeuPaneProject.cpp" />
+    <ClCompile Include="DeuPaneProperty.cpp" />
+    <ClCompile Include="DeuPaneRaster.cpp" />
+    <ClCompile Include="DeuPaneVector.cpp" />
+    <ClCompile Include="DeuPaneVectorProject.cpp" />
+    <ClCompile Include="DeuProjectDoc.cpp" />
+    <ClCompile Include="DeuProjectFrame.cpp" />
+    <ClCompile Include="DeuProjectView.cpp" />
+    <ClCompile Include="DeuRasterDoc.cpp" />
+    <ClCompile Include="DeuRasterFrame.cpp" />
+    <ClCompile Include="DeuRasterProjectTranDlg.cpp" />
+    <ClCompile Include="DeuRasterTranDlg.cpp" />
+    <ClCompile Include="DeuRasterView.cpp" />
+    <ClCompile Include="DeuSDEConnectProperty.cpp" />
+    <ClCompile Include="DeuSQLite3.cpp" />
+    <ClCompile Include="DeuSQLProvider.cpp" />
+    <ClCompile Include="DeuTabControl.cpp" />
+    <ClCompile Include="DeuTaskCache.cpp" />
+    <ClCompile Include="DeuTaskProcess.cpp" />
+    <ClCompile Include="DeuVectorDoc.cpp" />
+    <ClCompile Include="DeuVectorFrame.cpp" />
+    <ClCompile Include="DeuVectorProjectDoc.cpp" />
+    <ClCompile Include="DeuVectorProjectFrame.cpp" />
+    <ClCompile Include="DeuVectorProjectTranDlg.cpp" />
+    <ClCompile Include="DeuVectorProjectView.cpp" />
+    <ClCompile Include="DeuVectorTranDlg.cpp" />
+    <ClCompile Include="DeuVectorView.cpp" />
+    <ClCompile Include="DeuViewerDoc.cpp" />
+    <ClCompile Include="DeuViewerFrm.cpp" />
+    <ClCompile Include="DeuViewView.cpp" />
+    <ClCompile Include="DeuXmlReader.cpp" />
+    <ClCompile Include="DeuXmlWriter.cpp" />
+    <ClCompile Include="EllipManager.cpp" />
+    <ClCompile Include="FileFormatSet.cpp" />
+    <ClCompile Include="GridCell.cpp" />
+    <ClCompile Include="GridCellBase.cpp" />
+    <ClCompile Include="GridCtrl.cpp" />
+    <ClCompile Include="GridDropTarget.cpp" />
+    <ClCompile Include="InPlaceEdit.cpp" />
+    <ClCompile Include="Markup.cpp" />
+    <ClCompile Include="Md5.cpp" />
+    <ClCompile Include="Node.cpp" />
+    <ClCompile Include="RasterSetting.cpp" />
+    <ClCompile Include="SdeSelect.cpp" />
+    <ClCompile Include="SetTransParams.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TinyXml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TinyXml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TinyXml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TinyXml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TitleTip.cpp" />
+    <ClCompile Include="TpErrProc.Cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AnimateStatic.h" />
+    <ClInclude Include="ArcGDBTest.h" />
+    <ClInclude Include="ArcGISAuthorization.h" />
+    <ClInclude Include="ArcSDEConnection.h" />
+    <ClInclude Include="arcsdedefine.h" />
+    <ClInclude Include="ArcSDERaster.h" />
+    <ClInclude Include="ArcSDeVector.h" />
+    <ClInclude Include="CellRange.h" />
+    <ClInclude Include="DeuComboBox.h" />
+    <ClInclude Include="DeuCoordinateSystem.h" />
+    <ClInclude Include="DeuDlgBackground.h" />
+    <ClInclude Include="DeuDlgCommCP.h" />
+    <ClInclude Include="DeuDlgCp.h" />
+    <ClInclude Include="DeuDlgCpList.h" />
+    <ClInclude Include="DeuDlgDataSrc.h" />
+    <ClInclude Include="DeuDlgDataSrcCustom.h" />
+    <ClInclude Include="DeuDlgDataSrcCustomDetail.h" />
+    <ClInclude Include="DeuDlgDataSrcDetail.h" />
+    <ClInclude Include="DeuDlgEllipManager.h" />
+    <ClInclude Include="DeuDlgExcel.h" />
+    <ClInclude Include="DeuDlgFiles.h" />
+    <ClInclude Include="DeuDlgGeoDetic.h" />
+    <ClInclude Include="DeuDlgGridSetting.h" />
+    <ClInclude Include="DeuDlgLogin.h" />
+    <ClInclude Include="DeuDlgOracle.h" />
+    <ClInclude Include="DeuDlgOraTables.h" />
+    <ClInclude Include="DeuDlgProjected.h" />
+    <ClInclude Include="DeuDlgUserGroups.h" />
+    <ClInclude Include="DeuDlgUserGroupsOpera.h" />
+    <ClInclude Include="DeuDlgUsers.h" />
+    <ClInclude Include="DeuDlgUsersOpera.h" />
+    <ClInclude Include="DeuDMap.h" />
+    <ClInclude Include="DeuEllipList.h" />
+    <ClInclude Include="DeuFLGrid.h" />
+    <ClInclude Include="DeuFunction.h" />
+    <ClInclude Include="DeuGlobal.h" />
+    <ClInclude Include="DeuGlobalChildFrame.h" />
+    <ClInclude Include="DeuGlobalMainFrm.h" />
+    <ClInclude Include="DeuGlobalParam.h" />
+    <ClInclude Include="DeuPanelTask.h" />
+    <ClInclude Include="DeuPaneProject.h" />
+    <ClInclude Include="DeuPaneProperty.h" />
+    <ClInclude Include="DeuPaneRaster.h" />
+    <ClInclude Include="DeuPaneVector.h" />
+    <ClInclude Include="DeuPaneVectorProject.h" />
+    <ClInclude Include="DeuProjectDoc.h" />
+    <ClInclude Include="DeuProjectFrame.h" />
+    <ClInclude Include="DeuProjectView.h" />
+    <ClInclude Include="DeuRasterDoc.h" />
+    <ClInclude Include="DeuRasterFrame.h" />
+    <ClInclude Include="DeuRasterProjectTranDlg.h" />
+    <ClInclude Include="DeuRasterTranDlg.h" />
+    <ClInclude Include="DeuRasterView.h" />
+    <ClInclude Include="DeuSDEConnectProperty.h" />
+    <ClInclude Include="DeuSQLite3.h" />
+    <ClInclude Include="DeuSQLProvider.h" />
+    <ClInclude Include="DeuTabControl.h" />
+    <ClInclude Include="DeuTaskCache.h" />
+    <ClInclude Include="DeuTaskProcess.h" />
+    <ClInclude Include="DeuUserDefineObject.h" />
+    <ClInclude Include="DeuVectorDoc.h" />
+    <ClInclude Include="DeuVectorFrame.h" />
+    <ClInclude Include="DeuVectorProjectDoc.h" />
+    <ClInclude Include="DeuVectorProjectFrame.h" />
+    <ClInclude Include="DeuVectorProjectTranDlg.h" />
+    <ClInclude Include="DeuVectorProjectView.h" />
+    <ClInclude Include="DeuVectorTranDlg.h" />
+    <ClInclude Include="DeuVectorView.h" />
+    <ClInclude Include="DeuViewerDoc.h" />
+    <ClInclude Include="DeuViewerFrm.h" />
+    <ClInclude Include="DeuViewView.h" />
+    <ClInclude Include="DeuXmlReader.h" />
+    <ClInclude Include="DeuXmlStruct.h" />
+    <ClInclude Include="DeuXmlWriter.h" />
+    <ClInclude Include="EllipManager.h" />
+    <ClInclude Include="FileFormatSet.h" />
+    <ClInclude Include="GridCell.h" />
+    <ClInclude Include="GridCellBase.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="GridDropTarget.h" />
+    <ClInclude Include="InPlaceEdit.h" />
+    <ClInclude Include="Md5.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="RasterSetting.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SdeSelect.h" />
+    <ClInclude Include="SetTransParams.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TinyXml\tinystr.h" />
+    <ClInclude Include="TinyXml\tinyxml.h" />
+    <ClInclude Include="TitleTip.h" />
+    <ClInclude Include="tppubbas.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\src\Deu2000\res\import.bmp" />
+    <Image Include="..\src\Deu2000\res\ToolBarLargeA.bmp" />
+    <Image Include="..\src\Deu2000\res\Tree.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
+    <Image Include="res\camera-lens.ico" />
+    <Image Include="res\del.bmp" />
+    <Image Include="res\Deu2000.ico" />
+    <Image Include="res\Deu2000Doc.ico" />
+    <Image Include="res\import.bmp" />
+    <Image Include="res\map.bmp" />
+    <Image Include="res\save.bmp" />
+    <Image Include="res\TabCtrlIcons.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\toolbar2.bmp" />
+    <Image Include="res\toolbar3.bmp" />
+    <Image Include="res\toolbar4.bmp" />
+    <Image Include="res\ToolBarLarge.bmp" />
+    <Image Include="res\Tree.bmp" />
+    <Image Include="res\users.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Deu2000.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="res\Deu2000.rc2" />
+    <None Include="res\toolbar1.psd" />
+    <None Include="res\toolbar2.psd" />
+    <None Include="res\toolbar3.psd" />
+    <None Include="res\Tree.psd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties _x007B_54F4C2F7-ED40-43B7-9D6F-E45965DF7F95_x007D_="CDeuDMap" RESOURCE_FILE="Deu2000.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gbk"?>
+<TaskList type="TaskList" name="TaskList">
+	<CDeuTask id="D5CDD840-D0F9-4776-8A16-0D2444B67D69" type="" name="">
+		<IN_PATH type="" name="">C:\Users\Rkc\Desktop\Hywen\Update\源数据去带号36</IN_PATH>
+		<OUT_PATH type="" name="">C:\Users\Rkc\Desktop</OUT_PATH>
+		<IN_DRIVER type="" name="">ESRI Shapefile</IN_DRIVER>
+		<OUT_DRIVER type="" name="">DXF</OUT_DRIVER>
+		<IN_ELLIPSE type="" name="">Xian 1980</IN_ELLIPSE>
+		<OUT_ELLIPSE type="" name="">CGCS2000</OUT_ELLIPSE>
+		<IN_COORDTYPE type="" name="">Xian 1980</IN_COORDTYPE>
+		<OUT_COORDTYPE type="" name="">CGCS2000</OUT_COORDTYPE>
+		<InCentr_long type="" name=""></InCentr_long>
+		<OutCentr_long type="" name=""></OutCentr_long>
+		<Type type="" name="">0</Type>
+		<Status type="" name="">1</Status>
+		<CurTable type="" name=""></CurTable>
+		<TableList type="" name="">
+			<tab type="" name="">C:\Users\Rkc\Desktop\Hywen\Update\源数据去带号36\矢量6位7位带号源数据.shp</tab>
+		</TableList>
+		<ControlPath type="" name=""></ControlPath>
+		<TransModel type="" name="">格网转换模型</TransModel>
+	</CDeuTask>
+</TaskList>

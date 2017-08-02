@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gbk"?>
+<FormatList type="" name="">
+	<Formats type="0" name="vector">
+			<Format type="1" name="">ESRI Shapefile</Format>
+			<Format type="1" name="">MapInfo File</Format>
+			<Format type="1" name="">DXF</Format>
+			<Format type="1" name="">AVCE00</Format>
+			<Format type="1" name="">Oracle</Format>
+			<Format type="1" name="">Excel</Format>
+			<Format type="1" name="">Coverage</Format>
+			<Format type="1" name="">ArcSDE</Format>
+	</Formats>
+	<Formats type="1" name="raster">
+			<Format type="1" name="">GTiff</Format>
+			<Format type="1" name="">HFA</Format>
+			<Format type="1" name="">EHdr</Format>
+			<Format type="1" name="">AAIGrid</Format>
+			<Format type="1" name="">BMP</Format>
+			<Format type="1" name="">ArcSDE</Format>
+	</Formats>
+</FormatList>
