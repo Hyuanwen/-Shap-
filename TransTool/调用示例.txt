@@ -1,4 +1,5 @@
-	CTransTool TransTool;
+	1
+    CTransTool TransTool;
 	int i = 0;
 	double dDesX[10], dDesY[10], dDesZ[10];
 	double dX[10] = {2821335.355,
